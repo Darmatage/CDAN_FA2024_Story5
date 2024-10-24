@@ -60,46 +60,52 @@ public void Next(){
                 ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "YOU";
-                Char1speech.text = "What a beautiful piece of treasure.";
+                Char1speech.text = "Oh God, how far did I fall?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==3){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Assistant";
-                Char2speech.text = "Sure, beautiful if you want to get blown up or crushed by a trap.";
+                Char2name.text = "Raider";
+                Char2speech.text = "Hmmm, it doesn't really matter when something this nice falls right into my hands.";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
                 Char1name.text = "YOU";
-                Char1speech.text = "C'mon, we've done this a million times before. I'll grab it.";
+                Char1speech.text = "Dammit I really thought that would go differently. You’re seriously gonna take MY pendant? I fell so many stories for that..";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 5){
-                Char1name.text = "Assistant";
-                Char1speech.text = "Suit yourself.";
+                Char1name.text = "Raider";
+                Char1speech.text = "I don’t recall asking you about your feelings.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 6){
                 Char1name.text = "YOU";
-                Char1speech.text = "...";
+                Char1speech.text = "Give the pendant back!";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==7){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Assistant";
-                Char2speech.text = "Are you sure about this one?";
+                Char2name.text = "Raider";
+                Char2speech.text = "What pendant?";
         }
-       else if (primeInt == 8){
+         else if (primeInt ==7){
                 Char1name.text = "YOU";
-                Char1speech.text = "Hmm..";
+                Char1speech.text = "Don’t make me upset now asshole.";
                 Char2name.text = "";
                 Char2speech.text = "";
+        }
+       else if (primeInt == 8){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Raider";
+                Char2speech.text = "Right. What could you possibly do? You’re in no shape for a scuffle.";
                 // Turn off the "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -112,12 +118,12 @@ public void Next(){
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Assistant";
-                Char2speech.text = "Okayyy… Have fun then. I’ll see you outside of the temple.";
+                Char2name.text = "Raider";
+                Char2speech.text = "You’re pretty loud for someone in such a vulnerable state, watch your mouth.";
         }
        else if (primeInt == 21){
                 Char1name.text = "YOU";
-                Char1speech.text = "Whatever, I'll see you outside.";
+                Char1speech.text = "I mean it, don’t mess with me.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 // Turn off the "Next" button, turn on "Scene" button/s
@@ -130,12 +136,12 @@ public void Next(){
        else if (primeInt == 30){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Assistant";
-                Char2speech.text = "Wow! Thanks for listening to me for once!";
+                Char2name.text = "Raider";
+                Char2speech.text = "HUH? All that yapping just to switch your tune so quickly? Lose your spine on the way down or something?";
         }
        else if (primeInt == 31){
                 Char1name.text = "YOU";
-                Char1speech.text = "Yeah yeah, let's get out of here.";
+                Char1speech.text = "Real funny, just letting the young pups have a cut.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 // Turn off the "Next" button, turn on "Scene" button/s

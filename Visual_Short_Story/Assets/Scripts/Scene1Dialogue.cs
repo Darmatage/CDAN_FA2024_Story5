@@ -18,6 +18,8 @@ public class Scene1Dialogue : MonoBehaviour {
        //public TMP_Text Char3speech;
         public GameObject DialogueDisplay;
         public GameObject ArtChar1a;
+        public GameObject ArtChar1b;
+        public GameObject ArtChar1c;
        //public GameObject ArtChar1b;
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
@@ -33,6 +35,8 @@ public class Scene1Dialogue : MonoBehaviour {
         void Start(){  
              DialogueDisplay.SetActive(false);
              ArtChar1a.SetActive(false);
+             ArtChar1b.SetActive(false);
+             ArtChar1c.SetActive(false);
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
@@ -57,7 +61,6 @@ public void Next(){
                 // audioSource1.Play();
         }
         else if (primeInt == 2){
-                ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "What a beautiful piece of treasure.";
@@ -65,6 +68,7 @@ public void Next(){
                 Char2speech.text = "";
         }
        else if (primeInt ==3){
+                ArtChar1a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Assistant";
@@ -78,6 +82,8 @@ public void Next(){
                 Char2speech.text = "";
         }
        else if (primeInt == 5){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "Assistant";
                 Char1speech.text = "Suit yourself.";
                 Char2name.text = "";
@@ -90,6 +96,8 @@ public void Next(){
                 Char2speech.text = "";
         }
        else if (primeInt ==7){
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Assistant";
@@ -110,12 +118,15 @@ public void Next(){
        // after choice 1a
        else if (primeInt == 20){
                 //gameHandler.AddPlayerStat(1);
+                ArtChar1b.SetActive(true);
+                ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Assistant";
                 Char2speech.text = "Okayyy… Have fun then. I’ll see you outside of the temple.";
         }
        else if (primeInt == 21){
+                ArtChar1b.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "Whatever, I'll see you outside.";
                 Char2name.text = "";
@@ -128,6 +139,8 @@ public void Next(){
 
        // after choice 1b
        else if (primeInt == 30){
+                ArtChar1a.SetActive(true);
+                ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Assistant";
