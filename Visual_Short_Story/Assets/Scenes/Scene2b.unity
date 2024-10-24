@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 777721020}
   - component: {fileID: 777721019}
   m_Layer: 5
-  m_Name: ImageCHAR1a
+  m_Name: ImageCHAR2b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -318,7 +318,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bcf6407e71c1b634bbe5b2bec81c608b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f36542b0ecaec0d4ca8e293a52cb8ae1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -430,7 +430,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4133457729867787639, guid: 9113e2fea3f3e854c8650233c4026fcc, type: 3}
       propertyPath: m_text
-      value: Leave the tomb.
+      value: Choice 1b
       objectReference: {fileID: 0}
     - target: {fileID: 6009598542870948341, guid: 9113e2fea3f3e854c8650233c4026fcc, type: 3}
       propertyPath: m_Name
@@ -697,7 +697,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d077771c367a2004e83f0576a7927113, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 27aedab3cba106f49bc1d170e5abd057, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -809,7 +809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4133457729867787639, guid: 9113e2fea3f3e854c8650233c4026fcc, type: 3}
       propertyPath: m_text
-      value: Take the amulet.
+      value: Scene Change 1
       objectReference: {fileID: 0}
     - target: {fileID: 6009598542870948341, guid: 9113e2fea3f3e854c8650233c4026fcc, type: 3}
       propertyPath: m_Name
@@ -1022,15 +1022,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4133457729867787639, guid: 9113e2fea3f3e854c8650233c4026fcc, type: 3}
       propertyPath: m_text
-      value: "Wait a second, I\u2019m feeling kinda *yawn*..."
-      objectReference: {fileID: 0}
-    - target: {fileID: 4133457729867787639, guid: 9113e2fea3f3e854c8650233c4026fcc, type: 3}
-      propertyPath: m_fontSize
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 4133457729867787639, guid: 9113e2fea3f3e854c8650233c4026fcc, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 35
+      value: Scene Chane 2
       objectReference: {fileID: 0}
     - target: {fileID: 6009598542870948341, guid: 9113e2fea3f3e854c8650233c4026fcc, type: 3}
       propertyPath: m_Name
@@ -1443,10 +1435,6 @@ PrefabInstance:
     - target: {fileID: 1454682691277128856, guid: 9113e2fea3f3e854c8650233c4026fcc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4133457729867787639, guid: 9113e2fea3f3e854c8650233c4026fcc, type: 3}
-      propertyPath: m_text
-      value: Don't listen.
       objectReference: {fileID: 0}
     - target: {fileID: 6009598542870948341, guid: 9113e2fea3f3e854c8650233c4026fcc, type: 3}
       propertyPath: m_Name

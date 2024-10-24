@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class Scene1Dialogue : MonoBehaviour {
+public class Scene2aDialogue : MonoBehaviour {
 // These are the script variables.
 // For more character images / buttons, copy & renumber the variables:
         public int primeInt = 1;        // This integer drives game progress!
@@ -73,7 +73,7 @@ public void Next(){
         }
        else if (primeInt == 4){
                 Char1name.text = "YOU";
-                Char1speech.text = "C'mon we've done this a million times before. I'll grab it.";
+                Char1speech.text = "C'mon, we've done this a million times before. I'll grab it.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
