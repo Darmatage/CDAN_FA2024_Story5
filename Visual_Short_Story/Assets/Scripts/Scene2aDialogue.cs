@@ -47,6 +47,12 @@ public class Scene2aDialogue : MonoBehaviour {
                  if (Input.GetKeyDown("space")){
                       Next();
                  }
+
+				  // secret debug code: go back 1 Story Unit, if NEXT is visible
+                 if (Input.GetKeyDown("p")) {
+                      primeInt -= 2;
+                      Next();
+                 } 
              }
         }
 
@@ -57,7 +63,7 @@ public void Next(){
                 // audioSource1.Play();
         }
         else if (primeInt == 2){
-                ArtChar1a.SetActive(true);
+                
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "Oh God, how far did I fall?";
@@ -65,6 +71,7 @@ public void Next(){
                 Char2speech.text = "";
         }
        else if (primeInt ==3){
+			ArtChar1a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Raider";
@@ -78,10 +85,10 @@ public void Next(){
                 Char2speech.text = "";
         }
        else if (primeInt == 5){
-                Char1name.text = "Raider";
-                Char1speech.text = "I don’t recall asking you about your feelings.";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Raider";
+                Char2speech.text = "I don't recall asking you about your feelings.";
         }
        else if (primeInt == 6){
                 Char1name.text = "YOU";
@@ -97,7 +104,7 @@ public void Next(){
         }
          else if (primeInt ==7){
                 Char1name.text = "YOU";
-                Char1speech.text = "Don’t make me upset now asshole.";
+                Char1speech.text = "Don't make me upset now asshole.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -105,7 +112,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Raider";
-                Char2speech.text = "Right. What could you possibly do? You’re in no shape for a scuffle.";
+                Char2speech.text = "Right. What could you possibly do? You're in no shape for a scuffle.";
                 // Turn off the "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -119,11 +126,11 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Raider";
-                Char2speech.text = "You’re pretty loud for someone in such a vulnerable state, watch your mouth.";
+                Char2speech.text = "You're pretty loud for someone in such a vulnerable state, watch your mouth.";
         }
        else if (primeInt == 21){
                 Char1name.text = "YOU";
-                Char1speech.text = "I mean it, don’t mess with me.";
+                Char1speech.text = "I mean it, don't mess with me.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 // Turn off the "Next" button, turn on "Scene" button/s
@@ -156,7 +163,7 @@ public void Next(){
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Yeah I’m sure, this opportunity is too good to pass up.";
+                Char1speech.text = "Yeah I'm sure, this opportunity is too good to pass up.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 19;

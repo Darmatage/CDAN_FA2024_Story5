@@ -51,6 +51,12 @@ public class Scene1Dialogue : MonoBehaviour {
                  if (Input.GetKeyDown("space")){
                       Next();
                  }
+				 
+				  // secret debug code: go back 1 Story Unit, if NEXT is visible
+                 if (Input.GetKeyDown("p")) {
+                      primeInt -= 2;
+                      Next();
+                 } 
              }
         }
 
@@ -84,10 +90,10 @@ public void Next(){
        else if (primeInt == 5){
                 ArtChar1a.SetActive(false);
                 ArtChar1b.SetActive(true);
-                Char1name.text = "Assistant";
-                Char1speech.text = "Suit yourself.";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Assistant";
+                Char2speech.text = "Suit yourself.";
         }
        else if (primeInt == 6){
                 Char1name.text = "YOU";
@@ -123,7 +129,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Assistant";
-                Char2speech.text = "Okayyy… Have fun then. I’ll see you outside of the temple.";
+                Char2speech.text = "Okayyy… Have fun then. I'll see you outside of the temple.";
         }
        else if (primeInt == 21){
                 ArtChar1b.SetActive(false);
@@ -163,7 +169,7 @@ public void Next(){
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Yeah I’m sure, this opportunity is too good to pass up.";
+                Char1speech.text = "Yeah I'm sure, this opportunity is too good to pass up.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 19;

@@ -47,6 +47,12 @@ public class Scene2bDialogue : MonoBehaviour {
                  if (Input.GetKeyDown("space")){
                       Next();
                  }
+
+				  // secret debug code: go back 1 Story Unit, if NEXT is visible
+                 if (Input.GetKeyDown("p")) {
+                      primeInt -= 2;
+                      Next();
+                 } 
              }
         }
 
@@ -91,7 +97,7 @@ public void Next(){
         }
        else if (primeInt ==7){
                 Char1name.text = "YOU";
-                Char1speech.text = "You’re not even eating my hand freak. You Literally have no teeth.";
+                Char1speech.text = "You're not even eating my hand freak. You Literally have no teeth.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -99,7 +105,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Mummy";
-                Char2speech.text = "Oh.. but I am.. You just don’t kmow it yet.";
+                Char2speech.text = "Oh.. but I am.. You just don't kmow it yet.";
        }
         else if (primeInt == 9){
                 Char1name.text = "YOU";
@@ -111,7 +117,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Mummy";
-                Char2speech.text = "You’re simply close minded, new things nourish the mind.";
+                Char2speech.text = "You're simply close minded, new things nourish the mind.";
                 // Turn off the "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -173,7 +179,7 @@ public void Next(){
         }
         public void Choice1bFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Maybe you’re right, it actually doesn’t feel that terrible.";
+                Char1speech.text = "Maybe you're right, it actually doesn't feel that terrible.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 29;
