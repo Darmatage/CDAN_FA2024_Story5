@@ -63,7 +63,6 @@ public void Next(){
                 // audioSource1.Play();
         }
         else if (primeInt == 2){
-                
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "Oh God, how far did I fall?";
@@ -71,6 +70,8 @@ public void Next(){
                 Char2speech.text = "";
         }
        else if (primeInt ==3){
+                GameHandler.GotTreasure1=false;
+                GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().DisplayTreasure();
 			ArtChar1a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";

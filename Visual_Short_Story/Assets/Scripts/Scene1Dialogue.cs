@@ -28,7 +28,7 @@ public class Scene1Dialogue : MonoBehaviour {
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject nextButton;
-       //public AudioSource audioSource1;
+        public AudioSource SFX_StoneCollapse;
         private bool allowSpace = true;
 
 // Set initial visibility. Added images or buttons need to also be SetActive(false);
@@ -129,12 +129,29 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Assistant";
-                Char2speech.text = "Okayyy… Have fun then. I'll see you outside of the temple.";
+                Char2speech.text = "Okayyy... Have fun then. I'll see you outside of the temple.";
         }
        else if (primeInt == 21){
+                //gameHandler.AddPlayerStat(1);
                 ArtChar1b.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "Whatever, I'll see you outside.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt == 22){
+                GameHandler.GotTreasure1=true;
+                GameHandler.HadTreasure=true;
+                GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().DisplayTreasure();
+                Char1name.text = "YOU";
+                Char1speech.text = "GOT IT! Wow, it sure does sparkle!";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt == 23){
+                SFX_StoneCollapse.Play();
+                Char1name.text = "YOU";
+                Char1speech.text = "Huh. What is that rumbling sound?";
                 Char2name.text = "";
                 Char2speech.text = "";
                 // Turn off the "Next" button, turn on "Scene" button/s

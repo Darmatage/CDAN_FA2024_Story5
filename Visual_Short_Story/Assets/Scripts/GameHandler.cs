@@ -8,7 +8,12 @@ using UnityEngine.Audio;
 
 public class GameHandler : MonoBehaviour {
 
-        public static int playerStat1;
+        public static bool GotTreasure1 = false;
+        public static bool GotTreasure2 = false;
+        public static bool HadTreasure = false;
+        public GameObject treasureInventory;
+        public GameObject treasureArt1;
+        public GameObject treasureArt2;
 
         public static bool GameisPaused = false;
         public GameObject pauseMenuUI;
@@ -28,6 +33,7 @@ public class GameHandler : MonoBehaviour {
         void Start(){
                 pauseMenuUI.SetActive(false);
                 GameisPaused = false;
+                DisplayTreasure();
         }
 
         void Update(){
@@ -80,4 +86,28 @@ public class GameHandler : MonoBehaviour {
                 Application.Quit();
                 #endif
         }
+
+        public void DisplayTreasure(){
+                if (GotTreasure1 == true){
+                        treasureArt1.SetActive(true);
+                } else {
+                        treasureArt1.SetActive(false);
+                }
+
+                if (GotTreasure2 == true){
+                        
+                        treasureArt2.SetActive(true);
+                } else {
+                       treasureArt2.SetActive(false); 
+                }
+
+                if (HadTreasure == true){
+                        treasureInventory.SetActive(true);
+                }else {
+                      treasureInventory.SetActive(false);  
+                }
+        }
+
+
+
 }
