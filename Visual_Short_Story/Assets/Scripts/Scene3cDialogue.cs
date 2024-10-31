@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class Scene2bDialogue : MonoBehaviour {
+public class Scene3cDialogue : MonoBehaviour {
 // These are the script variables.
 // For more character images / buttons, copy & renumber the variables:
         public int primeInt = 1;        // This integer drives game progress!
@@ -63,16 +63,16 @@ public void Next(){
                 // audioSource1.Play();
         }
         else if (primeInt == 2){
-                ArtChar1a.SetActive(true);
+                ArtChar1a.SetActive(false);
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Mummy";
-                Char2speech.text = "*munch munch munch* oh god..";
+                Char1name.text = "YOU";
+                Char1speech.text = "*huff...huff...huff...*";
+                Char2name.text = "";
+                Char2speech.text = "";
         }
        else if (primeInt ==3){
                 Char1name.text = "YOU";
-                Char1speech.text = "HUH? WHAT THE..";
+                Char1speech.text = "I think I lost that freak.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);
@@ -80,44 +80,45 @@ public void Next(){
        else if (primeInt == 4){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Mummy";
-                Char2speech.text = "*munch munch munch*";
+                Char2name.text = "???";
+                Char2speech.text = "Hehehe.";
         }
        else if (primeInt == 5){
                 Char1name.text = "YOU";
-                Char1speech.text = "This is.. Uh..";
+                Char1speech.text = "What the hell was that?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 6){
+                ArtChar1a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Mummy";
-                Char2speech.text = "Imb just *munch* habing a snack *munch*";
+                Char2name.text = "Stranger";
+                Char2speech.text = "Hehehe. Good tidings my friend.";
         }
        else if (primeInt ==7){
                 Char1name.text = "YOU";
-                Char1speech.text = "You're not even eating my hand freak. You Literally have no teeth.";
+                Char1speech.text = "Not another freak, ugh.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 8){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Mummy";
-                Char2speech.text = "Oh.. but I am.. You just don't kmow it yet.";
+                Char2name.text = "Stranger";
+                Char2speech.text = "That's no way to talk to someone you just met.";
        }
         else if (primeInt == 9){
                 Char1name.text = "YOU";
-                Char1speech.text = "Man, this is definitely a new situation, yikes.";
+                Char1speech.text = "Sorry, I just got my hand sucked on by some freaky mummy. I'm a little on edge here.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
         else if (primeInt == 10){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Mummy";
-                Char2speech.text = "You're simply close minded, new things nourish the mind.";
+                Char2name.text = "Stranger";
+                Char2speech.text = "Non-taken I suppose, however I can't let you pass.";
                 // Turn off the "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -128,16 +129,16 @@ public void Next(){
        // after choice 1a
        else if (primeInt == 20){
                 //gameHandler.AddPlayerStat(1);
-                Char1name.text = "";
-                Char1speech.text = "";
+                Char1name.text = "YOU";
+                Char1speech.text = "This truly is agony, see what happens when I walk away from treasure?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 21){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Mummy";
-                Char2speech.text = "Ahh, I see. So you seek death then.";
+                Char2name.text = "Stranger";
+                Char2speech.text = "Answer my riddle and gain passage and a gift in return.";
                 // Turn off the "Next" button, turn on "Scene" button/s
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -148,14 +149,14 @@ public void Next(){
        else if (primeInt == 30){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "Oh um... that was actually really nice of you.";
         }
        else if (primeInt == 31){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Mummy";
-                Char2speech.text = "Oh... Uh wow I wasn't expecting such a civilized answer.";
+                Char1name.text = "YOU";
+                Char1speech.text = "Good sir, I am exhausted. I would simply like to pass through.";
+                Char2name.text = "";
+                Char2speech.text = "";
                 // Turn off the "Next" button, turn on "Scene" button/s
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -168,7 +169,7 @@ public void Next(){
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Get my hand OUT OF YOUR MOUTH!";
+                Char1speech.text = "Unbelievable...";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 19;
@@ -179,7 +180,7 @@ public void Next(){
         }
         public void Choice1bFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Maybe you're right, it actually doesn't feel that terrible.";
+                Char1speech.text = "Kind stranger, please let me pass through.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 29;
@@ -193,6 +194,6 @@ public void Next(){
                SceneManager.LoadScene("Scene3c");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene2c");
+                SceneManager.LoadScene("Scene3d");
         }
 }

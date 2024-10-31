@@ -18,12 +18,24 @@ EditorBuildSettings:
     path: Assets/Scenes/SceneLose.unity
     guid: acd770a8904cd614b9be8ce8b0ca164f
   - enabled: 1
+    path: Assets/Scenes/SceneLoseMummyMarriage.unity
+    guid: 0038fb3ba8dd6c34aa0b0f0a85faeb95
+  - enabled: 1
     path: Assets/Scenes/SceneWin.unity
     guid: 8f506e5496fee884580e5f3ad837b4ee
+  - enabled: 1
+    path: Assets/Scenes/SceneWinMummy.unity
+    guid: a83c959e5e48933468c12fa8344cce22
   - enabled: 1
     path: Assets/Scenes/Scene2a.unity
     guid: 3e33a22448b5f9247b274bc34eb3e4a1
   - enabled: 1
     path: Assets/Scenes/Scene2b.unity
     guid: 35db21f1167dcfe4c900a4e349fe4fbe
+  - enabled: 1
+    path: Assets/Scenes/Scene2c.unity
+    guid: ad540e5a2a9643a47a4429f017ae3827
+  - enabled: 1
+    path: Assets/Scenes/Scene3c.unity
+    guid: da970fe1ab103c04bb4cfd62af70e7a4
   m_configObjects: {}
