@@ -18,7 +18,8 @@ public class Scene2aDialogue : MonoBehaviour {
        //public TMP_Text Char3speech;
         public GameObject DialogueDisplay;
         public GameObject ArtChar1a;
-       //public GameObject ArtChar1b;
+        public GameObject ArtChar1b;
+        public GameObject ArtChar1c;
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
         public GameObject Choice1a;
@@ -33,6 +34,8 @@ public class Scene2aDialogue : MonoBehaviour {
         void Start(){  
              DialogueDisplay.SetActive(false);
              ArtChar1a.SetActive(false);
+             ArtChar1b.SetActive(false);
+             ArtChar1c.SetActive(false);
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
@@ -98,6 +101,8 @@ public void Next(){
                 Char2speech.text = "";
         }
        else if (primeInt ==7){
+        ArtChar1c.SetActive(true);
+        ArtChar1a.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Raider";
@@ -110,6 +115,8 @@ public void Next(){
                 Char2speech.text = "";
         }
        else if (primeInt == 8){
+        ArtChar1b.SetActive(true);
+        ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Raider";
@@ -124,6 +131,8 @@ public void Next(){
        // after choice 1a
        else if (primeInt == 20){
                 //gameHandler.AddPlayerStat(1);
+                ArtChar1c.SetActive(true);
+                ArtChar1b.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Raider";
@@ -142,6 +151,8 @@ public void Next(){
 
        // after choice 1b
        else if (primeInt == 30){
+        ArtChar1b.SetActive(true);
+        ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Raider";
