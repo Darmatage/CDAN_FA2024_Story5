@@ -120,7 +120,7 @@ public void Next(){
                 Char2speech.text = "";
         }
         else if (primeInt == 10){
-                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
                 ArtChar1a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -142,6 +142,7 @@ public void Next(){
                 Char2speech.text = "";
         }
        else if (primeInt == 21){
+        ArtChar1a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
